@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, 
+        initial-scale = 1.0">
+        <title>For the love of web-development</title>
+        <style>
+            h1, h2, h3, h4, h5, h6{
+                font-family: Verdana;
+            }
+            h1{
+                color: Red;
+                font-size: 32px;
+            }
+            h2{
+                color: green;
+                font-size: 30px;
+            }
+        </style>
+    </html>
+    <body>
+        <h1>Introduction to HTML</h1>
+        <h2>Basic tags</h2>
+        
+            <ul>
+                <li>Header tags - h1, h2, ..., h6</li>
+                <li>Paragraph tag - p</li>
+                <li>Center tag - center </li>
+                <li> Horizontal tag - hr </li>
+                <li>Preserve formatting - pre </li>
+                <li>Non breaking space - "nbsp prefixed with &" </li>
+                <li>Listing tag - ol, ul, li</li>
+            </ul>
+        <hr>
+        <h2>Headings</h2>  
+            <h1 style="text-align: center;">This is heading 1</h1>    
+            <h2 style="text-align: center;">This is heading 2</h2>
+            <h3 style="text-align: center;">This is heading 3</h3>  
+            <h4 style="text-align: center;">This is heading 4</h4>
+            <h5 style="text-align: center;">This is heading 5</h5>
+            <h6 style="text-align: center;"> This is heading 6</h6>
+         <hr>
+        <h2 style = "text-align: center;">Paragraphs</h2>
+        <p style = "text-align: center;">This is the first paragraph</p>
+        <p style = "text-align: center;">This is the second paragraph</p>
+        <p style = "text-align: center;">This is the third paragraph</p>
+        <hr>
+        <h2 style = "text-align: center;">Demonstrating the use of breaks</h2>
+        <p style = "text-align: center;">Hello, <br> You submitted your assignment on time.</p>
+        <hr>
+        <h2 style = "text-align: center;">Preserving format</h2>
+        <pre>
+            x <- function(){
+                ##Function body
+            }
+        </pre>
+        <hr>
+        <p>Sometimes, you will want to ensure that your text is 
+            displayed in one line. In such a case, instead of using the normal
+            space to separate word, the&nbsp;character&nbsp;is&nbsp;used&nbsp;as&nbsp;shown&nbsp;
+            &nbsp;in&nbsp;the&nbsp;previous&nbsp;4&nbsp;or five words.
+        </p>
+        <hr>
+        <h2>Lists</h2>
+        <h3>Unordered lists</h3>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <h3>Ordered lists</h3>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <hr>
+        <h2>Nested html elemements</h2>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <b>bold</b> text</p>
+        <h2>
+            HTML void elements
+        </h2>
+        <p>
+            These are self closing tags, they include, <b>hr</b> for horizontal line breaks,
+            <b>br</b> for skipping lines, <b>source</b> for embedding media
+            and such as audio and video and lastly, <b>img</b> for inserting images.
+            Example;
+        </p>
+        <img src="noah.JPG" alt="A wonderful young man" width="150" height="150"  />
+        <h2>HTML attributes</h2>
+        <p style = "text-align: left;"> HTML attributes are special 
+            words that provide additional information to an HTML element. Attributes are 
+            placed inside the element opening tag and they are used to configure or adjust 
+            an elements behaviour. All elements are made up of two parts;
+            <ul>
+                <li><b>Name</b></li>
+                <p>The attribute name is the keyword, also known as the attribute identifier, 
+                    which defines a specific characteristic for the element in which it is using. 
+                    For example, the paragraph *p* element (in the below-given example) has an 
+                    attribute "align", which defines the alignment of the paragraph on the page.</p>
+                <li><b>Value</b></li>
+                <p>The attribute value is the data or information that defines the value to be set 
+                    for that attribute. The value is assigned within the double quotes. For example, 
+                    <b>"left"</b>, <b>"center"</b>, or <b>"right"</b> can be assigned to the <b>"align"</b> 
+                    attribute with the paragraph tag</p>
+            </ul>
+            Basically, the syntax is as follows;
+            <pre>
+                <"tag_name attribute = "Value">...<"/tag_name">
+            </pre>
+        </p>
+        <h3>
+            Rules and characteristics
+        </h3>
+        <p>
+            <ul>
+                <li>Attributes are optional; you can use them to provide 
+                additional information about an HTML element.</li>
+                <li>Attributes have name and value pairs, but some of the 
+                    the attributes do not require any value; those are known
+                    as Boolean attributes.</li>
+                <li>An HTML element can have multiple attributes and 
+                    they should be separated by space.
+                </li>
+                <li>Attributes should always be written with the opening tag</li>
+                <li>All HTML elements can have attributes except a few like
+                    head, title, script etc.
+                </li>
+                <li> W3C recommends using attributes in lowercase and keeping the 
+                    value in quotes</li>
+            </ul>
+            An example of attributes in use:
+            <br>
+            <p style = "text-align: left;">This is left aligned </p>
+            <p style = "text-align: center;">This is center aligned</p>
+            <p style = "text-align: right;">This is right aligned</p>
+        </p>
+        <h2>HTML core attributes</h2>
+        <h3>The Id Attribute</h3>
+        <p>The Id attribute is used to uniauely identify any
+            element within an HTML page.
+        </p>
+        <h4>Reasons you may want to use Id attribute</h4>
+        <ul>
+            <li>If an element carries an Id attribute as a unique 
+                identifier, it is possible to identify just that
+                element and its content.
+            </li>
+            <li>If you have two elements of the same name within a webpage
+                (or style sheet), you can use the id attribute to distinguish
+                between them.
+            </li>
+        </ul>
+        <p id = "html">This part explains what is HTML</p>
+        <p id = "css">This part explains what is a Cascading
+            Style Sheet
+        </p>
+        <h3>The Style Attribute</h3>
+        <p>The style attribute allows you to write inline css 
+            rules for an element
+        </p>
+        <p style = "text-align: center; font-family: Arial; 
+        color: blue;" >I am Noah Mutunga</p>
+        <h2>The title Attribute</h2>
+        <p>The title attribute gives a suggested title for the 
+            element. The syntax for the title attribute is similar as 
+            explained for <b>id</b> attribute. 
+            The behaviour of this attribute will depend on the element 
+            that carries it, although it is often displayed as a tooltip
+            when the cursor comes over the element or while the element
+            is loading.
+            Example;
+            <h3 title = "Level 3 heading", style="text-align: center;">This is heading 3</h3>
+            <h2>The class Attribute</h2>
+            <p>The class attribute specifies one or more CSS classes 
+                for an HTML element.
+                Multiple classes can be used on the same element with This
+                attribute. We will have a deeper look at this when we go through css</p>
+        </p>
+        <h2>HTML Internalization Attributes</h2>
+        <h3>The dir Attribute</h3>
+        <p>The <b style = "color: blueviolet;">Dir</b> <span style = "color: blueviolet;">attribute</span> allows 
+        you to indicate to the browser about the direction in which text should
+    flow. It can take one of two values;
+         <ol>
+        <li>ltr - Left to right (default value)</li>
+        <li>rtl - Right to left (for langauges such as Hebrew or Arabic
+            that are read right to left)
+        </li>
+        </ol>
+        <p dir = "rtl"> This is right to left</p>
+        </p>
+        <h3>The lang Attribute</h3>
+        <p>The <b style = "color: blue;">lang </b> <span style = "color: blue;"> attribute</span> 
+    allows you to indicate the main language used in a document. Nowadays, this 
+attribute has been replaced by <span style = "font-family: Arial Narrow;">xml:lang</span> attribute in new 
+HTML documents</p>
+            <h2>HTML Boolean Attributes</h2>
+            <p>Boolean attributes represent true and false values and 
+                do not require any value with the attribute name. To set the 
+                the true value, you need to write the attributes name and set it to false,
+                the attribute should be ommited altogether.
+                Some Boolean attributes;
+                <ul>
+                    <li><span style = "color: aqua;">disabled</span></li>
+                    <li><span style = "color: aqua;">readonly</span></li>
+                    <li><span style = "color: aqua;">required</span></li>
+                    <li>Inert</li>
+                    <li>Autocomplete</li>
+                </ul>
+                Example;
+
+            </p>
+            <form>
+                <label for = "user_name">Input User Name:</label>
+                <input type = "text" id = "user_name" name = "user_name" required>
+                <input type = "submit">
+            </form>
+        <h2>HTML Generic Attributes</h2>
+        <ul>
+            <li><b>align</b> (right, left, center) Horizontally aligns tags</li>
+            <li>valign(top, middle, bottom) Vertically aligns tags within 
+                an HTML element.
+            </li>
+            <li><b>bgcolor</b> numeric, hexidecimal, RGB values, Places a background color
+            behind an element</li>
+            <li>background, URL, places a background image behind an element</li>
+            <li>id, user defined, names an element for use with CSS</li>
+            <li>class, user defined, classifies an element for use with CSS</li>
+            <li>width, numeric value, specifies the width of tables, images
+                or table cells.
+            </li>
+            <li>height, Numeric Value, specifies the height of tables,
+                images, or table cells.
+            </li>
+            <li>title, user defined, "pop-up" title of the elements.</li>
+        </ul>
+        <h2>Best Practices for using HTML attributes</h2>
+        <h3>1. Write values in Quotes</h3>
+            <!--Good practice-->
+        <a href = "https://www.tutorialspoint.com/html/html_attributes.htm">Some HTML notes</a>
+            <!--Bad practice-->
+            <br>
+        <a href = https://www.tutorialspoint.com/html/html_attributes.htm>Some HTML notes</a>
+        <h3>Use lowercase</h3>
+        <span>HTML is case insensitive but it is a good practice to write HTML attributes in lower case</span>
+        <h3>3. Use of single and Double Quotes Together</h3>
+        <span>When you need to provide any string in quotes as the value of 
+            an attribute, you can use the combination of single and double 
+            quotes.
+            Example:
+        </span>
+        <p title = "We are known for 'Simple Easy Learning'">Tutorialspoint</p>
+        <p title = 'We are known for "Simple Easy Learning"'>
+            Tutorialspoint
+        </p>
+        <h1>HTML - Headings</h1>
+        <p>HTML headings define the hierachy (levels) and structure 
+            of content on a webpage. 
+        </p>
+        <h2>Reason to use headings</h2>
+        <p>Headings are crucial for structuring content and
+            providing a clear visual indication of the beginning of new 
+            sections or topics. Properly structured headings enhance readability
+            and user experience on websites, ensuring that information is 
+            organized and easy to navigate.
+            <ul>
+                <li><b>Heading impact on SEO:</b> The well organized headings help 
+                search engines to understand the content structure and indexing</li>
+                <li><b>Highlighting Important topics:</b> The use of heading tags Properly
+                keeps the content readable</li>
+            </ul>
+        </p>
+        <h3 >Hierachical Structure of Heading Tags</h3>
+        <p>Below is the list according to the hierarchy of the heading tags</p>
+        <ul style="background-color: aquamarine;">
+            <li><b>The h1 Tag</b>  - The top level heading denotes the main topic 
+            or title of the entire page.</li>
+            <li><b>The h2 tag</b> - Subheadings under h1, represent major topics related to main topic.
+            They provide a more specific context to the content.</li>
+            <li><b>h3 through h6</b> - These tags are used for further subsections or Nested content
+            within h2 headings. They offer a deeper level of hierachy 
+        for organizing content with specific sections</li>
+
+        </ul>
+        <h2>Headings Using &lt;h1&gt; to &lt;h6&gt;</h2>
+        <h1>Heading 1: Main heading of page</h1>
+        <h2>Heading 2: Section</h2>
+        <h3>Heading 3: Subsection</h3>
+        <h4>Heading 4: Sub-subsection</h4>
+        <h5>Heading 5: Lower-level heading</h5>
+        <h6>Heading 6: Lowest-level heading</h6>
+
+        <h2>Styling Headings with CSS</h2>
+        <p>In the following example, we will apply the style such
+            as <span style = "color: green;">font family, font color,
+                font size
+            </span>, etc. to the heading. Notice that this will interfere with 
+            the appearance in other parts of the document since the change will be applied global.
+        </p>
+        <h2>Using HTML tags within Heading Tags</h2>
+        <h3>The &lt;span&gt; Tag</h3>
+        <p>You can use the <span style = "color: aqua;">&lt;span&gt;</span>
+        to apply inline styles or classes to specific portions of 
+        the text within a heading. This allows for custom styling of text 
+        within a heading. 
+        Example;
+        <h3>This is a <span style = "color: blue;">Blue</span> word</h3>
+        </p>
+        <h3>The &lt;em&gt; and &lt;strong&gt; Tags</h3>
+        <p>These tags are used for empasizing text within headings . 
+            The em tag italicizes the text while strong makes it bold. Example;
+            <br>
+            This is <em>Emphasized</em> and this is <strong>strong</strong> text.
+        </p>
+        <h3>The &lt;sup&gt; and &lt;sub&gt; tags </h3>
+        <p>Example;
+            <br>
+            The 10<sup>th</sup> floor
+            <br>
+            The chemical formula of water is H<sub>2</sub>O.
+        </p>
+        <h3>The &lt;abbr&gt; Tag for abbreviations</h3>
+        <p>
+            When you need to include an abbreviation or acronym in a heading
+            use the abbr tag. It often provides a tooltip with the full meaning.
+            <br>
+            Example;
+        </p>
+        <h3>HTML stands for <abbr title = "Hyper Text Markup Language">HTML</abbr></h3>
+        <h3>The &lt;mark&gt; Tag</h3>
+        <p>Use the mark tag to higlight specific text within a heading.
+            It is often used to indicate search results or selected portions of text.
+            Example;
+            <br>
+            This is <mark>important.</mark> Do not overlook.
+        </p>
+        <h2>Mistakes to be avoided</h2>
+        <ul style="background-color: lightpink;">
+            <li><b>Skipping levels</b> - Always follow the proper 
+            hierachy (h1, h2, h3, etc)</li>
+            <li><b>Overusing h1</b> - Reserve h1 for the main title;
+            don't use it multiple times on a page.</li>
+            <li><b>Styling Overload</b> - Avoid excessive styling; css
+            should handle the aesthetics, not headings</li>
+        </ul>
+        <h3>The &lt;a&gt; Tag for Links</h3>
+        <p><a href="https://www.linkedin.com/in/noah-mutunga-248785205/">LinkedIn</a></p>
+        <h2>HTML paragraphs</h2>
+        <p>
+        HTML paragraphs are block-level elements used to structure 
+        and format text content on  a webpage. A paragraph is Basically
+        a collection of words and punctuation together. It allows us to 
+        and present textual information in a coherent and readable manner.
+        The <span style = "color: green;">HTML <b>&lt;p&gt;</b></span> is used to create
+        a paragraph element.
+
+         </p>
+        <h3>Reasons to Use Paragraphs</h3>
+        <p>Paragraphs typically create space above and below text,
+        separating it from surrounding content. They can be controlled
+        using CSS to control aspects such as font size, color, alignment
+        and spacing. In web-development, paragraphs play a crucial role in 
+        conveying information effectively, enabling clear communication.
+        and enhancing the overall user experience on a website.
+        </p>
+        <h1>Main heading</h1>
+        <p>This is a paragraph beneath the main heading.</p>
+        <h3>Lists with paragraphs</h3>
+        <p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+        </p>
+        <h3>Images within paragraphs</h3>
+        <p>Here is an image: <img src = "tempsnip.png" alt = "Example Image" width="200"
+            height="250"></p>
+        <h3>Citations within Paragraph</h3>
+        <p>We use &lt;cite&gt; tag. <br>Example is given below;<br>
+            The book <cite>Hitchhiker's Guide To The Galaxy</cite>
+            is a wonderful book.
+        </p>
+        
+    </body>
+</html>
